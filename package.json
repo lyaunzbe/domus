@@ -1,0 +1,21 @@
+{
+  "name": "domus",
+  "version": "0.0.0",
+  "description": "Welcome to my wonderland",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyaunzbe/domus.git"
+  },
+  "author": "Ben Lyaunzon",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/lyaunzbe/domus/issues"
+  },
+  "dependencies": {
+    "ecstatic": "~0.4.10"
+  }
+}
