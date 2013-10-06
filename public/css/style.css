@@ -181,6 +181,11 @@ header ul.nav li:hover{
 
 }
 
+.about .about-wrap{
+  margin: 0 auto;
+  width:1450px;
+}
+
 .container {
   margin-top:71px;
 }
