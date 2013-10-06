@@ -26,6 +26,20 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: 'FuturaPTBold';
+  src: url('../futurapt-bold-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'FuturaPTBook';
+  src: url('../futurapt-book-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 html, body{
@@ -46,7 +60,7 @@ header{
   z-index: 999999;
   border-bottom: solid 1px rgb(199, 199, 199);
   width: 100%;
-  background-color:white;
+  background-color:rgba(253, 253, 253,.7);
   opacity:1;
   margin-top:-71px;
 
@@ -99,14 +113,14 @@ header ul.nav li:hover{
 .intro{
   height:900px;
   opacity:.8;
-  background:url('http://upload.wikimedia.org/wikipedia/commons/8/81/Downtown_LA_from_GP_Obs.jpg') no-repeat center center fixed;;
+  background:url('http://i.imgur.com/tkkNO.jpg') no-repeat center center fixed;
   background-size: cover;
   width:100%;
   text-align: center;
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
-.intro div{
+.intro .inner{
   letter-spacing: 0px;
   padding-right: 48px;
   padding-left: 25px;
@@ -120,8 +134,53 @@ header ul.nav li:hover{
   margin-top:100px;
 }
 .about{
-  height:500px;
 }
+
+.about h2{
+  font-family: 'FuturaPTBold';
+  text-transform: uppercase;
+  font-size:45px;
+  color:rgb(66, 66, 66);
+  line-height: 60px;
+  margin-left: 80px;
+  margin-top: 90px;
+  padding-bottom:4px;
+  border-bottom: 8px solid rgb(66, 66, 66);
+  display: inline-block;
+
+}
+
+.about p{
+  width:550px;
+  font-family: 'FuturaPTBook';
+  font-size:30px;
+  color:rgb(66, 66, 66);
+  text-align: justify;
+  line-height: 40px;
+  float:right;
+  margin-right:80px;
+  padding:20px;
+  border: 8px solid rgb(66, 66, 66);
+  margin-top:15px;
+}
+
+.about img.me{
+  width:616px;
+  -webkit-filter: grayscale(1);
+  opacity: .9;
+}
+
+
+.about .image-wrap{
+  height:500px;
+  overflow: hidden;
+  margin-left:80px;
+  border: 8px solid rgb(66,66,66);
+  display: inline-block;
+  margin-top:15px;
+
+}
+
 .container {
   margin-top:71px;
 }
