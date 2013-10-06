@@ -134,6 +134,8 @@ header ul.nav li:hover{
   margin-top:100px;
 }
 .about{
+  overflow: hidden;
+  padding-bottom:50px;
 }
 
 .about h2{
@@ -172,7 +174,7 @@ header ul.nav li:hover{
 
 
 .about .image-wrap{
-  height:500px;
+  height:561px;
   overflow: hidden;
   margin-left:80px;
   border: 8px solid rgb(66,66,66);
@@ -191,3 +193,61 @@ header ul.nav li:hover{
 }
 
 
+#work{
+  font-family: 'FuturaPTBook';
+  background-color:rgba(61,61,61,1);
+  color:white;
+  padding-left:79px;
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-right:67px;
+}
+
+#work .item .item-content h2{
+  font-family: 'FuturaPTBold';
+  font-size:30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin:0;
+}
+
+#work .item img{
+  float:left;
+}
+
+#work .item img.r{
+  float:right;
+}
+
+#work .item {
+  width:1271px;
+  border:10px solid rgba(95, 95, 95,.4);
+  height:200px;
+  margin-bottom:75px;
+
+}
+
+#work .item .item-content {
+  display: inline-block;
+  vertical-align: top;
+  color:rgb(136,136,136);
+  padding:20px;
+  width: 731px;
+}
+
+#work .item .item-content p{
+  text-align:justify;
+}
+
+#work .title{
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom:10px solid rgba(95, 95, 95,.4);
+  color:rgb(136,136,136);
+
+  text-transform: uppercase;
+  display: block;
+  margin:0 auto;
+  width:150px;
+  margin-bottom:50px;
+}
