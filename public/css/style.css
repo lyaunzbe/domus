@@ -113,8 +113,6 @@ header ul.nav li:hover{
 .intro{
   height:900px;
   opacity:.8;
-  background:url('http://i.imgur.com/tkkNO.jpg') no-repeat center center fixed;
-  background-size: cover;
   width:100%;
   text-align: center;
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -155,7 +153,7 @@ header ul.nav li:hover{
 .about p{
   width:550px;
   font-family: 'FuturaPTBook';
-  font-size:30px;
+  font-size:24px;
   color:rgb(66, 66, 66);
   text-align: justify;
   line-height: 40px;
@@ -195,7 +193,7 @@ header ul.nav li:hover{
 
 #work{
   font-family: 'FuturaPTBook';
-  background-color:rgba(61,61,61,1);
+  background-color:rgba(29,29,29,1);
   color:white;
   padding-left:79px;
   padding-top:50px;
@@ -252,10 +250,12 @@ header ul.nav li:hover{
   padding-bottom: 10px;
   border-bottom:10px solid rgba(95, 95, 95,.4);
   color:rgb(136,136,136);
-
+  font-size:34px;
   text-transform: uppercase;
   display: block;
   margin:0 auto;
-  width:150px;
+  width:200px;
   margin-bottom:50px;
+  letter-spacing: 1px;
 }
+
