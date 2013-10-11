@@ -245,7 +245,8 @@ header ul.nav li:hover{
   text-align:justify;
 }
 
-#work .title{
+#work .title, #contact .title{
+  font-family: 'FuturaPTBook';
   text-align: center;
   padding-bottom: 10px;
   border-bottom:10px solid rgba(95, 95, 95,.4);
@@ -278,6 +279,7 @@ header ul.nav li:hover{
 .project-wrap{
   margin: 0 auto;
   width:1292px;
+  overflow: hidden;
 }
 
 .project-exp{
@@ -319,9 +321,12 @@ header ul.nav li:hover{
 
 .project-exp li .tools:before{
   content:"Tools : ";
-  font-style:italic;
 }
 
+.project-exp li .tools{
+  font-style: italic;
+  font-size:22px;
+}
 .circle text{
   font-family: 'FuturaPTBold';
   text-transform: uppercase;
@@ -334,6 +339,51 @@ header ul.nav li:hover{
 .circle text:hover{
   text-shadow: 4px 4px 0px rgba(34, 34, 34, 0.8);
 }
+
+#play .sketchbook .title{
+  border:10px solid  rgb(66, 66, 66);
+  padding-bottom:15px;
+  padding-top:15px;
+  font-size:28px;
+  letter-spacing:2px;
+  transition: border-color .75s, color .75s, background-color .75s;
+  transition-timing-function: ease-in-out;
+}
+
+#play .sketchbook{
+  text-decoration: none;
+  margin-top:150px;
+  display: block;
+  margin-bottom: 150px;
+}
+
+#play .sketchbook .title:hover{
+  border-color:rgba(95, 95, 95,.4);
+  background-color:rgba(31,31,51,0.4);
+  color:rgba(231,231,231,1);
+}
+
+footer{
+  background-color:rgba(29,29,29,1);
+}
+
+footer ul{
+  list-style:none;
+  padding: 0;
+  margin:0 auto;
+
+  width:520px;
+}
+
+footer ul li{
+  display: inline-block;
+  margin:50px;
+}
+
+footer ul li:first-child{
+  margin-left:70px;
+}
+
 
 
 
