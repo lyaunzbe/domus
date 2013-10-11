@@ -22,7 +22,7 @@
   </header>
   <div class="container">
     <div class="intro">
-      <div class="inner">Create.</div>
+      <div data-lines="Create.,Build."class="dyanmo inner">Design.</div>
     </div>
     <div class="about">    
       <div class="about-wrap">
@@ -70,8 +70,71 @@
         </li>
       </ul>
     </div>
+    <div id="play">
+      <h2 class="title">Projects</h2>
+      <div class="project-wrap">
+        <ul class="project-exp">
+          <li class="item preface active">
+            <h2 class="title">Open Source Software</h2>
+            <p class="desc">Hover over a circle to find out more about the project or select it to go to that project's page on Github. Or just drag the circles around as you please. Take a look around, or better yet, submit an issue, perhaps even a pull request!           
+            </p>
+          </li>
+          <li class="item" id="1">
+            <h2 class="title">MFFM</h2>
+            <span class="status"></span>
+            <span class="tools">Javascript (ReactJS), LevelDB</span>
+            <p class="desc"> Taking advantage of leveldb's client side storage and reddit's simple json API, MFFM is a minimal javascript music player that creates playlists and streams music from your favorite subreddits (works best with musically inclined subreddits, like r/music, r/jazz, r/hiphopheads). Using React was a first for me, but I thought that its system of modularity and extensibely made it really easy to architect the scturcutre of my application. </p>
+          </li>
+          <li class="item" id="2">
+            <h2 class="title">HiphopJS</h2>
+            <span class="status"></span>
+            <span class="tools">Javascript, Node</span>
+            <p class="desc"> A node API module that exposes the RapGenius data in an object oriented fashion. My plans are to use this module to power some muisc/hiphop related data visualizations.</p>
+          </li>
+          <li class="item" id="3">
+            <h2 class="title">Lute</h2>
+            <span class="status"></span>
+            <span class="tools">Javascript, Node</span>
+            <p class="desc"> Lute is a task-based library for processing and manipulating audio using SoX, a unix command line executable easily installed with homebrew. </p>
+          </li>
+          <li class="item" id="4">
+            <h2 class="title">Derrida</h2>
+            <span class="status"></span>
+            <span class="tools">Javascript, Canvas</span>
+            <p class="desc"> A computer art experiment, inspired by the deconstructionist philsopher, Derrida. Deconstructing classical art through modern methods of distortion, manipulation, animation and  more. Made use of the BonsaiJS library, which provides many helpful shortcuts for manipulating SVG graphics with javascript.</p>
+          </li>
+          <li class="item" id="5">
+            <h2 class="title">Fadeaway</h2>
+            <span class="status"></span>
+            <span class="tools">Javascript</span>
+            <p class="desc"> A front-end library written to fade elements in and out as they are scrolled through the browser's viewport. A crossfader for your divs!</p>
+          </li>
+          <li class="item" id="6">
+            <h2 class="title">Node-fliptop</h2>
+            <span class="status"></span>
+            <span class="tools"> Node</span>
+            <p class="desc"> Fliptop provides customer intelligence. This module was written to provide a simple to use node interface for their REST API.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+<!--     <div id="contact">
+      <ul>
+        <li>
+          <a href="mailto:lyaunzon.b@gmail.com"></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/lyaunzon"></a>
+        </li>
+        <li>
+          <a href="http://github.com/lyaunzbe"></a>
+        </li>
+      </ul>
+    </div> -->
   </div>
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>  
+  <script src="./js/dynamo.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

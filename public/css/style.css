@@ -259,3 +259,81 @@ header ul.nav li:hover{
   letter-spacing: 1px;
 }
 
+#play .title{
+  font-family: 'BrandonBold';
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom:10px solid rgba(95, 95, 95,.4);
+  color:rgba(31,31,51,.85);
+  font-size:35px;
+  text-transform: uppercase;
+  display: block;
+  margin:0 auto;
+  width:250px;
+  margin-bottom:35px;
+  margin-top:50px;
+  letter-spacing: 1px; 
+}
+
+.project-wrap{
+  margin: 0 auto;
+  width:1292px;
+}
+
+.project-exp{
+  margin:0;
+  padding:0;
+  width: 400px;
+  font-family: 'FuturaPTBook';
+  font-size: 24px;
+  color: rgb(66, 66, 66);
+  line-height: 40px;
+  float: right;
+  padding: 20px;
+  border: 8px solid rgb(66, 66, 66);
+  margin-top:25px;
+  margin-right:50px;
+  min-height: 500px;
+  list-style: none;
+}
+
+.project-exp li{
+  display:none;
+}
+
+.project-exp li.active{
+  display: block;
+}
+
+#play .project-exp li h2.title{
+  border:none;
+  padding:0;
+  font-size:26px;
+}
+
+.project-exp li p{
+  text-align: justify;
+  font-size:18px;
+  line-height: 35px;
+}
+
+.project-exp li .tools:before{
+  content:"Tools : ";
+  font-style:italic;
+}
+
+.circle text{
+  font-family: 'FuturaPTBold';
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: rgba(49, 49, 49, 0.75);
+  text-shadow: 1px 1px 0px rgba(34, 34, 34, 0.3);
+  letter-spacing: 1px;
+}
+
+.circle text:hover{
+  text-shadow: 4px 4px 0px rgba(34, 34, 34, 0.8);
+}
+
+
+
