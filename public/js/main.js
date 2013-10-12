@@ -9,10 +9,10 @@ d3.selection.prototype.moveToFront = function() {
   });
 };
 
-$('project-exp').on('itemSelect', function(e, data){
-  console.log(data);
-});
+
 $(function(){
+
+
   // Load a random high res bg
   $('.intro').css('background', 'url("'+bg[Math.floor(Math.random()*bg.length)]+'") no-repeat center center fixed');
   $('.intro').css('background-size', 'cover');
@@ -50,13 +50,23 @@ $(function(){
 
     function tick(e) {
 
+
       var k = .1 * e.alpha;
       nodes.forEach(function(o, i) {
         o.y += (300 - o.y) * k;
         o.x += (100 - o.x) * k;
       });
-
       node.attr("transform",function(d){ return "translate("+d.x+","+d.y+")";});
+
+    // if((Math.random()*100) > 80) {
+    //       d3.event.stopPropagation();
+    //       nodes.forEach(function(o, i) {
+    //         o.x += (Math.random() - .5) * ((Math.random()*100)+40);
+    //         o.y += (Math.random() - .5) * ((Math.random()*100)+40);
+    //       });
+    //       force.resume();
+    //   }
+
     };
 
 
@@ -100,12 +110,7 @@ $(function(){
           }
         })
         .on("mousedown", function(){
-          d3.event.stopPropagation();
-          nodes.forEach(function(o, i) {
-            o.x += (Math.random() - .5) * ((Math.random()*100)+40);
-            o.y += (Math.random() - .5) * ((Math.random()*100)+40);
-          });
-          force.resume();
+    
         })
         .attr("transform",function(d){ return "translate("+d.x+","+d.y+")";})
         .call(force.drag)
