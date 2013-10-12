@@ -133,7 +133,7 @@ header ul.nav li:hover{
 }
 .about{
   overflow: hidden;
-  padding-bottom:50px;
+  padding-bottom:100px;
 }
 
 .about h2{
@@ -228,7 +228,7 @@ header ul.nav li:hover{
 #work .item {
   width:1271px;
   border:10px solid rgba(95, 95, 95,.4);
-  height:200px;
+  height:250px;
   margin-bottom:75px;
 
 }
@@ -243,6 +243,7 @@ header ul.nav li:hover{
 
 #work .item .item-content p{
   text-align:justify;
+  line-height:25px;
 }
 
 #work .title, #contact .title{

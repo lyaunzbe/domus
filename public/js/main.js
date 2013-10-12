@@ -1,4 +1,4 @@
-var bg = ['http://upload.wikimedia.org/wikipedia/commons/8/81/Downtown_LA_from_GP_Obs.jpg',
+var bg = ['./img/la.jpg',
           'http://i.imgur.com/tkkNO.jpg'];
 
 var bgt_count = 0;
