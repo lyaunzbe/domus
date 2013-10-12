@@ -50,7 +50,6 @@ $(function(){
 
     function tick(e) {
 
-      force.alpha(.4);
       var k = .1 * e.alpha;
       nodes.forEach(function(o, i) {
         o.y += (300 - o.y) * k;
@@ -61,6 +60,14 @@ $(function(){
     };
 
 
+    setInterval(function(){
+        nodes.forEach(function(o, i) {
+          o.y += (300 - o.y) * (Math.random()*.6)+.1;
+          o.x += (100 - o.x) * (Math.random()*.6)+.1;
+        });
+        force.resume();
+
+    }, 6000);
 
     // Update the nodes…
     node = vis.selectAll("g")
