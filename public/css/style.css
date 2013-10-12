@@ -53,8 +53,7 @@ html, body{
 
 
 header{
-  height: 45px;
-  padding: 10px 0px 15px 0px;
+  padding: 12px 0px 15px 0px;
   position: fixed;
   display: block;
   z-index: 999999;
@@ -62,7 +61,7 @@ header{
   width: 100%;
   background-color:rgba(253, 253, 253,.85);
   opacity:1;
-  margin-top:-71px;
+  margin-top:-77px;
 
 }
 
@@ -191,7 +190,7 @@ header ul.nav li:hover{
 }
 
 .container {
-  margin-top:71px;
+  margin-top:77px;
 }
 
 
