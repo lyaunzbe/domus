@@ -1,0 +1,40 @@
+
+body, html{
+  font-family: 'BrandonRegular';
+
+}
+
+.sidebar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 275px;
+  box-sizing: border-box;
+  border-right: 1px solid rgb(218, 223, 229);
+  margin:0;
+  padding: 0;
+}
+
+.sidebar h2{
+  text-align: center;
+  border-bottom:1px solid rgb(218, 223, 229);
+  padding-bottom:15px;
+}
+
+.sidebar .list{
+  list-style: none;
+}
+
+.sidebar .list li{
+
+}
+
+.sidebar .list li .date{
+  display: block;
+}
+
+.sketch{
+  margin-left: 275px;
+}
