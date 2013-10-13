@@ -3,6 +3,7 @@ jQuery ->
   frameHeight = 800
   frameWidth = 1120
   start = 0
+  lastShuffle = null
 
   $('<canvas id="sketch">').appendTo('.sketch')
     .attr('width', frameWidth)
@@ -33,13 +34,15 @@ jQuery ->
     ctx.clearRect(0, 0, frameWidth, frameHeight)
     t = t/1000
     
-    if (Math.floor(t) % 5 == 0)
-      x_factor++
+    c_time = Math.floor(t)
+
+    if ((c_time % 5 == 0))
+      x_factor+=.5
 
     while (i < num)
 
       slice = x_factor * Math.PI / num
-      amp = (Math.cos( speed*t + slice*i) * 90) + -165
+      amp = (Math.cos( speed*t + slice*i) * 80) + -165
       pos = points(rotation * i, amp)
       col = d3.hsl(i*(360/num), 1, 0.4784)
       circle(pos.x, pos.y, radius, col)

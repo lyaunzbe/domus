@@ -24,7 +24,7 @@ $(function(){
 
   // Initialize force graph
   function forceGraph(data){
-    var w = 1292,
+    var w = 700,
     h = 700,
     nodes = [{ id:3, size:100, name:'lute', url:''}, { id:6, size:70, name:'node-fliptop', url:''}, 
              {id:4, size:80, name: 'derrida', url:''}, { id:5, size:60, name:'fadeAway', url:''}, 
@@ -53,7 +53,7 @@ $(function(){
       var k = .1 * e.alpha;
       nodes.forEach(function(o, i) {
         o.y += (300 - o.y) * k;
-        o.x += (100 - o.x) * k;
+        o.x += (400 - o.x) * k;
       });
 
       node.attr("transform",function(d){ return "translate("+d.x+","+d.y+")";});
@@ -62,8 +62,8 @@ $(function(){
 
     setInterval(function(){
         nodes.forEach(function(o, i) {
-          o.y += (300 - o.y) * (Math.random()*.6)+.1;
-          o.x += (100 - o.x) * (Math.random()*.6)+.1;
+          o.y += (300 - o.y) * (Math.random()*.1)+.1;
+          o.x += (100 - o.x) * (Math.random()*.1)+.1;
         });
         force.resume();
 
