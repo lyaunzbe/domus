@@ -12,7 +12,7 @@ window.requestAnimFrame = do () ->
 jQuery ->
   # Load sketch on click
   $('.sidebar .list li a').click (e) -> 
+    $('.sketch').empty()
     filename = $(this).text().toLowerCase()+'.js'
 
-    $('.activeSketch')
-      .attr('src','./js/'+filename)
+    $.getScript('./js/'+filename)

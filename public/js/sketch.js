@@ -8,7 +8,8 @@ window.requestAnimFrame = (function() {
 jQuery(function() {
   return $('.sidebar .list li a').click(function(e) {
     var filename;
+    $('.sketch').empty();
     filename = $(this).text().toLowerCase() + '.js';
-    return $('.activeSketch').attr('src', './js/' + filename);
+    return $.getScript('./js/' + filename);
   });
 });

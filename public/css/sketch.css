@@ -13,26 +13,41 @@ body, html{
   width: 275px;
   box-sizing: border-box;
   border-right: 1px solid rgb(218, 223, 229);
-  margin:0;
-  padding: 0;
+
 }
 
 .sidebar h2{
   text-align: center;
   border-bottom:1px solid rgb(218, 223, 229);
   padding-bottom:15px;
+  margin-bottom:0px;
 }
 
 .sidebar .list{
   list-style: none;
+  margin:0;
+  padding: 0;
 }
 
 .sidebar .list li{
-
+  border-bottom:1px solid rgb(218, 223, 229);
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 .sidebar .list li .date{
   display: block;
+}
+
+.sidebar .list li a{
+  text-decoration:none;
+  font-family: 'BrandonBold';
+  color:teal;
+}
+
+.sidebar .list li a:hover{
+  color:red;
 }
 
 .sketch{

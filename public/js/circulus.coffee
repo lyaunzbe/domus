@@ -29,6 +29,7 @@ jQuery ->
     y: frameHeight/2 + Math.sin(angle) * amp
 
   render = (t) ->
+    console.log('yo');
     i = 0
     
     ctx.clearRect(0, 0, frameWidth, frameHeight)

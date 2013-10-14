@@ -27,6 +27,7 @@ jQuery(function() {
   };
   render = function(t) {
     var amp, c_time, col, i, pos, slice;
+    console.log('yo');
     i = 0;
     ctx.clearRect(0, 0, frameWidth, frameHeight);
     t = t / 1000;
