@@ -92,7 +92,6 @@ var ResponsiveElements = {
 			interval = options.interval,
 			i = interval > start ? interval : start,
 			classes = [];
-		console.log(start, i);
 		while (i <= end) {
 			if (i < width) classes.push('gt' + i);
 			if (i > width) classes.push('lt' + i);
@@ -100,7 +99,6 @@ var ResponsiveElements = {
 
 			i += interval;
 		}
-		console.log(classes);
 		return classes;
 	},
 	parseBreakpointClasses: function(breakpoints_string) {

@@ -12,13 +12,13 @@
       <span class="name">Ben Lyaunzon</span>
       <ul class="nav">
         <li>
-          About
+          <a href="#about">About</a>
         </li><li>
-          Work
+          <a href="#work">Work</a>
         </li><li>
-          Play
+          <a href="#play">Play</a>
         </li><li>
-          Contact
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -27,7 +27,7 @@
     <div class="intro" data-respond>
       <div data-lines="Create.,Build."class="dyanmo inner" >Design.</div>
     </div>
-    <div class="about">    
+    <div name="about"  id="about" class="about">    
       <div class="about-wrap">
         <h2>Hey there, <br> fellow internet traveler.</h2>
         <br>
@@ -36,7 +36,7 @@
         <div class="image-wrap"><img class="me" src="./img/me.jpg"></div>
       </div>
     </div>  
-    <div id="work" class="work" data-respond="start:1200px; end:1300px; interval:30px;">
+    <div name="work" id="work" class="work" data-respond="start:1200px; end:1300px; interval:30px;">
       <h2 class="title">Work</h2>
       <ul class="items">
         <li class="item">
@@ -79,7 +79,7 @@
         </li>
       </ul>
     </div>
-    <div id="play">
+    <div name="play" id="play">
       <h2 class="title">Projects</h2>
       <div class="project-wrap">
         <ul class="project-exp">
@@ -129,7 +129,7 @@
 
       <a class="sketchbook" href="/sketch"><h2 class="title">Sketchbook</h2></a>
     </div>
-    <footer id="contact">
+    <footer id="contact" name="contact">
       <h2 class="title">Contact</h2>
       <ul>
         <li>
@@ -145,6 +145,7 @@
     </footer>
   </div>
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="./js/jquery.smooth-scroll.min.js"></script>
   <script src="./js/responsive-elements.js"></script>
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>  
   <script src="./js/dynamo.min.js"></script>

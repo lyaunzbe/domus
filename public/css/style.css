@@ -84,6 +84,15 @@ header .name{
   border: 4px solid rgba(51, 51, 51,.4);
   padding: 7px;
   padding-bottom: 5px;
+
+  transition: border-color .75s, color .75s, background-color .75s;
+  transition-timing-function: ease-in-out;
+}
+
+header .name:hover{
+  border-color:rgba(239, 219, 255, 0.92);
+  background-color:rgba(31,31,51, .8);
+  color:rgb(255, 255, 255);
 }
 
 header ul.nav{
@@ -100,12 +109,17 @@ header ul.nav li{
   font-family: 'BrandonRegular';
   text-transform: uppercase;
   margin-right:50px;
-  color: rgba(51, 51, 51,.8);
   letter-spacing: 2px;
   font-size:18px;
 }
 
-header ul.nav li:hover{
+header ul.nav li a{
+  text-decoration: none;
+  color: rgba(51, 51, 51,.8);
+
+}
+
+header ul.nav li a:hover{
   color: rgba(51, 51, 51,.4);
 }
 

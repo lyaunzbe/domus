@@ -11,7 +11,7 @@ d3.selection.prototype.moveToFront = function() {
 
 
 $(function(){
-
+  $('a').smoothScroll({offset:-78});
 
   // Load a random high res bg
   $('.intro').css('background', 'url("'+bg[Math.floor(Math.random()*bg.length)]+'") no-repeat center center fixed');
@@ -26,9 +26,9 @@ $(function(){
   function forceGraph(data){
     var w = 700,
     h = 700,
-    nodes = [{ id:3, size:100, name:'lute', url:''}, { id:6, size:70, name:'node-fliptop', url:''}, 
-             {id:4, size:80, name: 'derrida', url:''}, { id:5, size:60, name:'fadeAway', url:''}, 
-             { id:1, size:150, name:'mffm', url:''}, { id:2, size:130, name:'hiphopJS', url:''},],
+    nodes = [{ id:3, size:100, name:'lute', url:'http://github.com/lyaunzbe/lute'}, { id:6, size:70, name:'node-fliptop', url:'https://github.com/poptip/node-fliptop'}, 
+             {id:4, size:80, name: 'derrida', url:'http://github.com/lyaunzbe/derrida'}, { id:5, size:60, name:'fadeAway', url:'http://github.com/lyaunzbe/fadeaway'}, 
+             { id:1, size:150, name:'mffm', url:'http://github.com/lyaunzbe/mffm'}, { id:2, size:130, name:'hiphopJS', url:'http://github.com/lyaunzbe/hiphop'},],
     node;
 
     function charge(d) {
@@ -118,8 +118,6 @@ $(function(){
         })
         .attr("transform",function(d){ return "translate("+d.x+","+d.y+")";})
         .call(force.drag)
-        .append("a")
-        .attr("xlink:href", function(d){ return d.url})
         .append("circle")
         .attr("r", function(d) { return d.size; })
         .style("fill", function(d){ return 'rgba(51,51,51,'+d.size/200+')';})
