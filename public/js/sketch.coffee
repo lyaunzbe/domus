@@ -15,6 +15,7 @@ jQuery ->
   if (document.location.hash.length > 0)
     filename = document.location.hash.split('#')[1].toLowerCase()+'.js';
     $.getScript('./js/sketchbook/'+filename)
+    $('title').append(' - '+document.location.hash.split('#')[1].toLowerCase());
   
   $('.sidebar .list li a').click (e) -> 
     $('.sketch').empty()

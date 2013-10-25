@@ -10,6 +10,7 @@ jQuery(function() {
   if (document.location.hash.length > 0) {
     filename = document.location.hash.split('#')[1].toLowerCase() + '.js';
     $.getScript('./js/sketchbook/' + filename);
+    $('title').append(' - ' + document.location.hash.split('#')[1].toLowerCase());
   }
   return $('.sidebar .list li a').click(function(e) {
     $('.sketch').empty();
