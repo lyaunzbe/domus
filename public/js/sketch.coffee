@@ -15,4 +15,4 @@ jQuery ->
     $('.sketch').empty()
     filename = $(this).text().toLowerCase()+'.js'
 
-    $.getScript('./js/'+filename)
+    $.getScript('./js/sketch/'+filename)

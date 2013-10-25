@@ -10,6 +10,6 @@ jQuery(function() {
     var filename;
     $('.sketch').empty();
     filename = $(this).text().toLowerCase() + '.js';
-    return $.getScript('./js/' + filename);
+    return $.getScript('./js/sketch/' + filename);
   });
 });
