@@ -13,6 +13,18 @@ $(function(){
     this.horizontal = {w:400 , h:100};
     this.center=  {x:400 , y:400};
     this.col = null;
+
+    var self = this;
+    
+    $('#sketch').mousemove(function(e){
+      self.center = {x:e.pageX, y: e.pageY};
+    });
+
+    $('#sketch').on('click', function(){
+      ctx.rect(0,0,frameWidth,frameHeight);
+      ctx.fillStyle = d3.hsl(Math.random()* 360, 1, 0.4784).toString();
+      ctx.fill();
+    })
   };
 
   Cross.prototype.draw = function(t) {
@@ -44,19 +56,18 @@ $(function(){
     this.horizontal.w = 400*Math.tan(Math.cos(t*5));
     this.horizontal.h = 100*Math.cos(Math.sin(t/Math.log(t*Math.random())));
 
-    var self = this;
-    $('#sketch').mousemove(function(e){
-      self.center = {x:e.pageX, y: e.pageY};
-    });
+
   }
   
   cvs = document.getElementById('sketch')
   ctx = cvs.getContext('2d')
 
+  ctx.rect(0,0,frameWidth,frameHeight);
+  ctx.fillStyle = 'black';
+  ctx.fill();
+
+
   var render = function(){
-    ctx.rect(0,0,frameWidth,frameHeight);
-    ctx.fillStyle = 'black';
-    ctx.fill();
 
     delta = (Date.now() - start)/1000;
     cross.modulate(delta);
