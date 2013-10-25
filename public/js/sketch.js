@@ -6,10 +6,14 @@ window.requestAnimFrame = (function() {
 })();
 
 jQuery(function() {
+  var filename;
+  if (document.location.hash.length > 0) {
+    filename = document.location.hash.split('#')[1].toLowerCase() + '.js';
+    $.getScript('./js/sketchbook/' + filename);
+  }
   return $('.sidebar .list li a').click(function(e) {
-    var filename;
     $('.sketch').empty();
     filename = $(this).text().toLowerCase() + '.js';
-    return $.getScript('./js/sketch/' + filename);
+    return $.getScript('./js/sketchbook/' + filename);
   });
 });
