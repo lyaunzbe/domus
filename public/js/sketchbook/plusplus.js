@@ -15,9 +15,9 @@ $(function(){
     this.col = null;
 
     var self = this;
-    
+
     $('#sketch').mousemove(function(e){
-      self.center = {x:e.pageX, y: e.pageY};
+      self.center = {x:e.pageX -260, y: e.pageY};
     });
 
     $('#sketch').on('click', function(){
