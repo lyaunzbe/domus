@@ -5,7 +5,7 @@ $(function(){
     return Math.round(num * 1000) / 1000;
   }
 
-  var base = 'http://0.0.0.0:3737/'
+  var base = 'http://benlyaunzon.com:3737/'
   
   $('.submit').click(function(){
     
@@ -33,7 +33,7 @@ $(function(){
         roundCurr(result.sell.valUSD)+' USD');
       $('.sell .x').append(' '+roundCurr(result.sell.rate)+' USD => 1 BTC');
       $('.sell .d').append(roundCurr(result.sell.depth));
-    })
+    }).fail(function (jqXHR, textStatus, errorThrown) { console.log(textStatus); })
   })
 
 });
