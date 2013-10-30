@@ -27,12 +27,12 @@ $(function(){
       $('.buy .q').append(' '+roundCurr(result.buy.valBTC)+' BTC / '+
         roundCurr(result.buy.valUSD)+' USD');
       $('.buy .x').append(' '+roundCurr(result.buy.rate)+' USD => 1 BTC');
-      $('.buy .d').append(result.buy.depth);
+      $('.buy .d').append(roundCurr(result.buy.depth));
 
       $('.sell .q').append(' '+roundCurr(result.sell.valBTC)+' BTC / '+
         roundCurr(result.sell.valUSD)+' USD');
       $('.sell .x').append(' '+roundCurr(result.sell.rate)+' USD => 1 BTC');
-      $('.sell .d').append(result.sell.depth);
+      $('.sell .d').append(roundCurr(result.sell.depth));
     })
   })
 
